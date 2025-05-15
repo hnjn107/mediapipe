@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediaPipe Hand Tracking</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        position: relative;
+        min-width: 640px;
+        min-height: 480px;
+      }
+      canvas {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      video {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <video id="input-video"></video>
+      <canvas id="output-canvas"></canvas>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
